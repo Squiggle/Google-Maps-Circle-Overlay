@@ -9,9 +9,9 @@ CircleOverlay(center:Number, radius:Number, strokeColor:String, strokeWeight:Num
 Sample Usage:
 
 var circle = new CircleOverlay(map.getCenter(), circleRadius, "#336699", 1, 1, '#336699', 0.25);
-map.addOverlay(circle);
+circle.setMap(map);
 
 or specify the number of points in the polygon for smoother or coarser effect:
 
 var circle = new CircleOverlay(map.getCenter(), circleRadius, "#0000FF", 1, 1, '#0000FF', 0.25, 40);
-map.addOverlay(circle);
+circle.setMap(map);
